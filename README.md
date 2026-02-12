@@ -29,17 +29,18 @@
 </p>
 
 <p align="center">
-  Supervisor: Eleni Tsalera, Laboratory Teaching Staff
+  Supervisor: Ioannis Amorginos, Applications Lecturer
 </p>
 <p align="center">
-  <a href="https://www.researchgate.net/profile/Eleni-Tsalera-2" target="_blank">UNIWA Profile</a>
+  <a href="https://ice.uniwa.gr/en/emd_person/ioannis-amorginos/" target="_blank">UNIWA Profile</a> ·
+  <a href="https://www.linkedin.com/in/%CE%B1%CE%BC%CE%BF%CF%81%CE%B3%CE%AF%CE%BD%CE%BF%CF%82-%CE%B3%CE%B9%CE%AC%CE%BD%CE%BD%CE%B7%CF%82-7185b088/" target="_blank">LinkedIn</a>
 </p>
 
 <p align="center">
-  Co-supervisor: Georgios Antoniou, Laboratory Teaching Staff
+  Co-supervisor: Eleni Tsalera, Laboratory Teaching Staff
 </p>
 <p align="center">
-  <a href="https://ice.uniwa.gr/en/emd_person/georgios-antoniou/" target="_blank">UNIWA Profile</a>
+  <a href="https://www.researchgate.net/profile/Eleni-Tsalera-2" target="_blank">UNIWA Profile</a>
 </p>
 
 <p align="center">
@@ -131,15 +132,15 @@ The Half Adder calculates the **Sum (S)** and **Carry (C)** of two one-bit binar
 
 - Sum:
   
-  $$ 
-  S = \overline{X}Y + X\overline{Y} = X \oplus Y 
-  $$
+$$ 
+S = \overline{X}Y + X\overline{Y} = X \oplus Y 
+$$
 
 - Carry:
   
-  $$ 
-  C = X \cdot Y 
-  $$
+$$ 
+C = X \cdot Y 
+$$
 
 #### Truth Table
 
@@ -160,15 +161,15 @@ The Half Subtractor calculates the **Difference (D)** and **Borrow (B)** between
 
 - Difference:
   
-  $$ 
-  D = \overline{X}Y + X\overline{Y} = X \oplus Y 
-  $$
+$$ 
+D = \overline{X}Y + X\overline{Y} = X \oplus Y 
+$$
 
 - Borrow:
   
-  $$ 
-  B = \overline{X} \cdot Y 
-  $$
+$$ 
+B = \overline{X} \cdot Y 
+$$
 
 #### Truth Table
 
@@ -216,6 +217,7 @@ Logical equations:
 $$
 D = X \oplus Y \oplus Bin 
 $$
+
 $$
 Bout = \overline{X}Y + Bin(\overline{X} \oplus Y) 
 $$
@@ -230,65 +232,90 @@ This workshop demonstrates the construction and operation of basic arithmetic ci
 
 # Installation & Setup Guide
 
-This repository contains laboratory simulations and analysis for **Circuit Theory**, focusing on **RLC series and parallel circuits** and their resonance behavior.  
+This repository contains laboratory simulations and documentation for **Logic Design**, focusing on **Adders and Subtractors (Deductors)** used in digital arithmetic circuits.
 
-All simulations are implemented in **NI Multisim**.
+All simulations are implemented using **NI Multisim**.
 
 ---
 
 ## Prerequisites
 
 ### Required Software
-- **NI Multisim 14** (or later)  
-  Ensure your system meets the requirements for running `.ms14` files.  
-  Download from [NI Multisim](https://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-multisim.html).
+- **NI Multisim 14** or later  
+  Required to open and run `.ms14` circuit simulation files.
+
+  Download:  
+  https://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-multisim.html
 
 ### Optional Software
-- **PDF Viewer** for documentation: `Coordination.pdf` / `Συντονισμός.pdf`
+- **PDF Viewer** (Adobe Reader, browser viewer, etc.)  
+  Used to open:
+  - `Adders-Deductors.pdf`
+  - `Αθροιστές-Αφαιρέτες.pdf`
+
+- **Git** (optional, for cloning the repository)
 
 ---
 
 ## Installation Steps
 
 ### 1. Clone the Repository
+Clone the repository using Git:
+
 ```bash
-git clone https://github.com/Circuit-Theory/Coordination.git
+git clone https://github.com/Logic-Design-aka-Uniwa/Adders-Deductors.git
 ```
+
+Or download the project as a ZIP file and extract it manually.
 
 ### 2. Navigate to Project Directory
 ```bash
-cd Coordination
+cd Adders-Deductors
 ```
 Ensure the following folder structure exists:
 ```bash
 assign/
 docs/
 multisim/
+README.md
 ```
 
----
+--- 
 
 ## Multisim Simulation Files
+The repository includes simulation files for the main arithmetic circuits:
 
-The repository includes two key simulation files:
-
-| File  | Description |
-|------:|-------------|
-| multisim/CoordinationSerial.ms14 |  RLC series circuit simulation |
-| multisim/CoordinationParallel.ms14 |  RLC parallel circuit simulation |
+| File | Description |
+|------|-------------|
+| `multisim/semiAdder.ms14` | Half Adder simulation |
+| `multisim/fullAdder.ms14` | Full Adder simulation |
+| `multisim/semiDeductor.ms14` | Half Subtractor simulation |
+| `multisim/fullDeductor.ms14` | Full Subtractor simulation |
+| `multisim/adder4Bits.ms14` | 4-bit Adder simulation |
 
 
 ### 3. Open a Simulation in Multisim
-- Launch NI Multisim.
-- Select File → Open.
-- Navigate to the `multisim/` folder.
-- Open the desired `.ms14` file (series or parallel circuit).
-- Wait for the circuit topology to load.
+1. Launch **NI Multisim**.
+2. Select **File** → **Open**.
+3. Navigate to the repository folder.
+4. Open the `multisim/` directory.
+5. Select a `.ms14` file.
+6. Wait for the circuit to load.
+7. Run the simulation using the Run button.
 
 ---
 
 ## Open the Documentation
-1. Navigate to the `docs/` directory
-2. Open the report corresponding to your preferred language:
-    - English: `Coordination.pdf`
-    - Greek: `Συντονισμός.pdf`
+1. Navigate to the `docs/` folder.
+2. Open the preferred documentation:
+
+| Language | File |
+|----------|------|
+| English | `docs/Adders-Deductors.pdf` |
+| Greek | `docs/Αθροιστές-Αφαιρέτες.pdf` |
+
+These documents include:
+- Circuit theory
+- Truth tables
+- Logical equations
+- Implementation details
