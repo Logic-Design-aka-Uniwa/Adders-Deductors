@@ -44,6 +44,15 @@
 </p>
 
 <p align="center">
+  Co-supervisor: Anastasios Tsilikounas, Laboratory Teaching Staff
+</p>
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/anastasios-tsilikounas/" target="_blank">UNIWA Profile</a> ·
+  <a href="https://www.linkedin.com/in/anastasios-tsilikounas-31111566/" target="_blank">LinkedIn</a>
+</p>
+
+
+<p align="center">
   Athens, April 2021
 </p>
 
